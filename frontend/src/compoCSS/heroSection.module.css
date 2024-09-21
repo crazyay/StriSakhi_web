@@ -1,0 +1,127 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #9dc0df;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 40%;
+  text-align: center;
+  font-size: large;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 3px 0;
+  transition: background-color 0.3s ease;
+}
+
+.linkList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkItem {
+  margin: 0px;
+}
+
+.link {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  background-color: #e6f7ff;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .leftSide {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .rightSide {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .linkList {
+    display: none;
+    flex-direction: column;
+    background-color: #f4f9ff;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .linkItem {
+    margin: 0.5rem 0;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+}

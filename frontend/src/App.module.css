@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: #f056cfc3; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Roboto', sans-serif; 
+  /* margin-bottom: 10px; */
+  height:4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.loginButton {
+  margin-right: 25px;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #0056b3; 
+}
+
+.languageSelect {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #007bff; 
+  background-color: #f8f9fa; 
+  color: #333;
+  cursor: pointer;
+}
+
+.languageSelect:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo {
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
+}
+
+.navbarName {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
