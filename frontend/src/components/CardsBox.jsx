@@ -1,29 +1,26 @@
-import React from 'react'
-import Homecard from './Homecard'
-import styles from "../compoCSS/cardsBox.module.css"
-import cardDataArray from '../API/CardData'
+import React from 'react';
+import Homecard from './Homecard';
+import cardDataArray from '../API/CardData';
 
 function CardsBox() {
   return (
     <>
-    <div className={styles.heading}>
+      <div className="flex justify-center py-4 text-4xl text-blue-600 mb-4">
         <h1>Resources for Every Stage of Life</h1>
-    </div>
-    <div className={styles.cardsBox}>
-
+      </div>
+      <div className="flex flex-wrap justify-center gap-8">
         {cardDataArray.map((card, index) => (
-        <Homecard 
-          key={index}
-          title={card.title}
-          imageUrl={card.imageUrl}
-          description={card.description}
-          linkUrl={card.linkUrl}
-        />
+          <Homecard
+            key={index}
+            title={card.title}
+            imageUrl={card.imageUrl}
+            description={card.description}
+            linkUrl={card.linkUrl}
+          />
         ))}
-
       </div>
     </>
-  )
+  );
 }
 
-export default CardsBox
+export default CardsBox;

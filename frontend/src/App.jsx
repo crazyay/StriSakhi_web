@@ -1,24 +1,7 @@
-// import './App.css'
-// import Home from './components/Home'
-// function App() {
-  
-
-//   return (
-//     <div>
-//      <Home/>
-//     </div>
-
-//   )
-// }
-
-// export default App
-
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import FrontCardContainer from './components/FrontCardContainer';
-// import ImproveYourLife from './components/ImproveYourLife';
 import ImproveYourLife from './components/ImproveYourLife';
 import HealthyTeen from './components/HealthyTeen';
 import Pregnancy from './components/Pregnancy';

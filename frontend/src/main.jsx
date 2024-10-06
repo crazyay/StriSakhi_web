@@ -14,7 +14,6 @@ createRoot(document.getElementById('root')).render(
       <Navbar/>
       <HeroSection/>
       <App/>
-      
       <Footer/>
   </StrictMode>,
 )
